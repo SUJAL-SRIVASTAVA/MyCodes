@@ -25,8 +25,7 @@ struct node *insertionbst(struct node *root,int data){
 }
 
 void inorder(struct node *root){
-    if (root == NULL)  
-        return; 
+    if (root == NULL) return; 
     inorder(root->left);
     printf("%d \t",root->data);
     inorder(root->right);
